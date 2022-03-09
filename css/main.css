@@ -1,0 +1,108 @@
+/* FONTS */
+@font-face {
+  font-family: "Paytone One";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/paytone-one-v16-latin-regular.woff2") format("woff2"), url("../fonts/paytone-one-v16-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Segoe-UI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: normal;
+  font-display: 700;
+  src: url("../fonts/Segoe-UI-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pavanam";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/pavanam-v9-latin-regular.woff2") format("woff2"), url("../fonts/pavanam-v9-latin-regular.woff") format("woff");
+}
+
+.header .navbar__nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* GENERAL STYLES */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.header__header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header__logo-link {
+  display: inline-block;
+}
+
+.header__logo-img {
+  display: block;
+  width: 143px;
+  height: 59px;
+}
+
+.header .navbar {
+  margin-left: 70px;
+}
+
+.header .navbar__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar__nav-item {
+  margin-right: 30px;
+}
+
+.header .navbar__nav-link {
+  font-family: "Paytone One", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
