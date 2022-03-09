@@ -1,9 +1,9 @@
 /* HERO  */
 
 .hero{
-  &__hero-inner{
-    
-  }
+  background-image: url("../../img/cup.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 15px) calc(100% - 100px);
   .hero-content{
     width: 994px;
     padding-top: 76px;
@@ -40,6 +40,7 @@
   .hero-form{
     &__form-email{
       font-family: $font-pavanam;
+      color: rgba(255, 255, 255, 0.4);
       width: 291px;
       font-size: $font-size-small;
       line-height: 18px;
