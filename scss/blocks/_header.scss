@@ -1,5 +1,11 @@
 /* HEADER */
 .header{
+  height: 788px;
+  background-image: url("../../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 51px;
   &__header-inner{
     @include flex(center, flex-start)
   }
@@ -21,6 +27,7 @@
       margin-right: 30px;
     }
     &__nav-link{
+      color: $white-color;
       font-family: $font-paytone-one;
       font-size: $font-size-medium;
       text-decoration: none;
