@@ -1,0 +1,272 @@
+/* ABOUT US */
+.about{
+  padding-right: 85px;
+  padding-left: 67px;
+  &__about-images-list{
+    position: relative;
+    @include flex(center, space-between);
+    @extend %list-no-style;
+    margin-top: 120px;
+    margin-bottom: 61px;
+  }
+  &__about-image{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.25);
+
+  }
+  &__about-image:nth-child(2){
+    position: absolute;
+    left: calc(50% - 146px);
+    bottom: 71px;
+  }
+  &__marketing{
+    @include flex(center, center);
+    margin-bottom: 61px;
+  }
+  &__marketing-title{
+    @include flex(center, center);
+    font-family: "Paytone One", sans-serif;
+    font-size: 25px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $white-color;
+    margin: 0;
+  }
+  &__marketing-title::after{
+    display: block;
+    width: 267px;
+    height: 21px;
+    background-image: url("../../img/sms.png");
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    content: "";
+  }
+  &__btn{
+    background-image: linear-gradient(180deg, #864A23 0%, #6A3A1B 100%);
+    border: none;
+    border-radius: 20px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 16px;
+    margin-left: 7px;
+  }
+  .btn-text{
+    @include flex(center, center);
+    font-size: $font-size-small;
+    color: $white-color;
+    font-weight: 600;
+  }
+  .btn-text::before{
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../img/write.png);
+    content: "";
+    margin-right: 7px;
+  }
+
+  &__about-bottom{
+    @include flex(flex-end,space-between);
+    padding-bottom: 120px;
+  }
+  &__notifications{
+    width: 450px;
+  }
+  &__notification ~ &__notification{
+    margin-top: 90px;
+  }
+  &__notification-top{
+    @include flex(center, space-between);
+    margin-bottom: 30px;
+  }
+  &__notification-top-text{
+    @include flex(center, space-between);
+    font-size: $font-size-medium;
+    color: $white-color;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 0;
+    &::before{
+      @include flex(center, center);
+      width: 35px;
+      height: 35px;
+      background-color: $red-color;
+      margin-right: 9px;
+      border-radius: 50%;
+      content: "1";
+    }
+  }
+  &__notification-top-btn{
+    @include flex(center, center);
+    font-weight: 600;
+    color: $dark-brown;
+    line-height: 24px;
+    border: none;
+    border-radius: 50px;
+    width: 131px;
+    padding: 5px 0;
+    background-image: url("../../img/notification.png");
+    &::before{
+      display: block;
+      width: 28px;
+      height: 27px;
+      background-image: url("../../img/round.png");
+      margin-right: 7px;
+      content: "";
+    }
+  }
+  &__notification-bottom{
+    @include flex(flex-start, space-between);
+    background-image: url("../../img/notification.png");
+    background-repeat: no-repeat;
+    padding-top: 14px;
+    padding-right: 16px;
+    padding-bottom: 23px;
+    padding-left: 17px;
+  }
+  &__notification-bottom-left{
+    @include flex(center,center);
+  }
+  &__person{
+    margin-left: 12px;
+  }
+  &__name{
+    font-size: $font-size-medium;
+    color: $dark-brown;
+    line-height: 25px;
+    font-weight: 700;
+    margin: 0;
+  }
+  &__time{
+    font-size: $font-size-medium;
+    color: rgba(46, 41, 41, 0.698);
+    line-height: 25px;
+    margin: 0;
+  }
+  &__notification-bottom-right{
+    max-width: 251px;
+  }
+  &__right-title{
+    font-size: $font-size-big;
+    color: $dark-brown;
+    line-height: 33px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 11px;
+  }
+  &__right-text{
+    font-size: $font-size-small;
+    line-height: 21px;
+    color: $dark-brown;
+    margin: 0;
+  }
+  &__notification-text{
+    font-size: $font-size-medium;
+    color: $white-color;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 0;
+  }
+  &__notification-toggle{
+    @include flex(center, space-between);
+    font-weight: 600;
+    color: $dark-brown;
+    line-height: 24px;
+    border: none;
+    border-radius: 50px;
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    background-image: url("../../img/notification.png");
+  }
+  &__notification-toggle-text{
+    font-weight: 600;
+    color: $dark-brown;
+    margin-right: 9px;
+  }
+  &__notification-switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 29px;
+  }
+  
+  &__notification-checkbox { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  &__notification-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+  
+  
+  &__notification-checkbox:checked +  &__notification-slider {
+    background-color: $red-color;
+  }
+  
+  &__notification-checkbox:focus + &__notification-slider {
+    box-shadow: 0 0 1px $red-color;
+  }
+  
+  &__notification-checkbox:checked + &__notification-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  &__notification-slider.round {
+    border-radius: 34px;
+  }
+  
+  &__notification-slider .round:before {
+    border-radius: 50%;
+  }
+
+  &__about-content{
+    max-width: 315px;
+  }
+  &__about-content-item ~ &__about-content-item{
+    margin-top: 121px;
+  }
+  &__about-content-heading{
+    font-size: $font-size-big;
+    line-height: 33px;
+    font-weight: 600;
+    color: $white-color;
+    opacity: 0.7;
+    margin: 0;
+    margin-bottom: 19px;
+  }
+  &__about-content-text{
+    font-size: $font-size-small;
+    line-height: 21px;
+    color: $white-color;
+    opacity: 0.7;
+    margin: 0;
+  }
+}
