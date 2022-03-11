@@ -4,66 +4,40 @@
   background-image: url("../../img/cup.png");
   background-repeat: no-repeat;
   background-position: calc(100% + 15px) calc(100% - 100px);
-  .hero-content{
+  &__hero-content{
     width: 994px;
     padding-top: 76px;
     padding-bottom: 79px;
     padding-left: 65px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    &__hero-heading{
-      font-size: 64px;
-      line-height: 89px;
-      color: $white-color;
-      font-family: $font-paytone-one;
-      font-weight: 400;
-      margin: 0;
-    }
-    &__hero-subtitle{
-      font-family: $font-paytone-one;
-      font-size: 20px;
-      color: $white-color;
-      line-height: 28px;
-      font-weight: 400;
-      margin: 0;
-      margin-bottom: 30px;
-    }
-    &__hero-text{
-      max-width: 432px;
-      font-size: $font-size-medium;
-      line-height: 27px;
-      margin: 0;
-      color: $white-color;
-      margin: 0;
-      margin-bottom: 25px;
-    }
   }
-  .hero-form{
-    &__form-email{
-      font-family: $font-pavanam;
-      color: rgba(255, 255, 255, 0.4);
-      width: 291px;
-      font-size: $font-size-small;
-      line-height: 18px;
-      background-color: transparent;
-      padding: 9px 35px;
-      border: 2px solid rgba(255, 255, 255, 0.4);
-      border-radius: 50px;
-    }
-    &__form-email::placeholder{
-      color: rgba(255, 255, 255, 0.4);
-    }
-    &__form-btn{
-      font-size: $font-size-small;
-      color: rgba(255, 255, 255, 0.4);
-      line-height: 18px;
-      padding: 9px 20px;
-      background-color: transparent;
-      border: 2px solid #FF1640;
-      border-radius: 50px;
-      margin-left: 20px;
-    }
+  &__hero-heading{
+    font-size: 64px;
+    line-height: 89px;
+    color: $white-color;
+    font-family: $font-paytone-one;
+    font-weight: 400;
+    margin: 0;
   }
-  .hero-socials{
+  &__hero-subtitle{
+    font-family: $font-paytone-one;
+    font-size: 20px;
+    color: $white-color;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  &__hero-text{
+    max-width: 432px;
+    font-size: $font-size-medium;
+    line-height: 27px;
+    margin: 0;
+    color: $white-color;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  &__hero-socials{
     @include flex(center, space-between);
     @extend %list-no-style;
     padding-top: 25px;

@@ -1,0 +1,33 @@
+/* PARTNERS */
+.partners{
+  max-width: 842px;
+  position: relative;
+  top: 1156px;
+  margin: 0 auto;
+  &__partners-top{
+    @extend %list-no-style;
+    @include flex(center, space-between);
+    margin-bottom: 46px;
+  }
+  &__partners-bottom{
+    @extend %list-no-style;
+    @include flex(center, space-between);
+  }
+  &__item-top{
+    @include flex(center, flex-start);
+    margin-bottom: 21px;
+  }
+  &__item-img{
+    border-radius: 50%;
+  }
+  &__item-link{
+    margin-left: 16px;
+  }
+  
+  &__item-text{
+    max-width: 252px;
+    font-size: $font-size-medium;
+    font-weight: 600;
+    margin: 0;
+  }
+}
