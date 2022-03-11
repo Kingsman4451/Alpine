@@ -1,8 +1,12 @@
 .logo-link{
   display: inline-block;
+  transition: transform 0.3s ease;
   &__logo-img{
     display: block;
     width: 143px;
     height: 59px;
+  }
+  &:hover{
+    transform: scale(1.1);
   }
 }

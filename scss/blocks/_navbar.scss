@@ -6,6 +6,19 @@
   }
   &__nav-item{
     margin-right: 30px;
+    &::after{
+      display: block;
+      width: 0%;
+      height: 3px;
+      background-color: $white-color;
+      content: "";
+      margin: auto;
+      margin-top: 3px;
+      transition: width 0.3s ease;
+    }
+    &:hover::after{
+      width: 100%;
+    }
   }
   &__nav-link{
     color: $white-color;
@@ -35,13 +48,16 @@
     @extend %list-no-style;
   }
   &__footer-item{
-    margin-bottom: 11px
+    margin-bottom: 11px;
   }
   &__footer-link{
     font-size: $font-size-medium;
     line-height: 27px;
     color: $white-color;
     text-decoration: none;
-
+    transition: color 0.3s ease;
+  }
+  &__footer-item:hover &__footer-link{
+    color: $red-color;
   }
 }

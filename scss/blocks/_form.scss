@@ -22,5 +22,11 @@
     border: 2px solid #FF1640;
     border-radius: 50px;
     margin-left: 20px;
+    transition: color 0.3s ease,
+                background-color 0.3s ease;
+    &:hover{
+      color: $white-color;
+      background-color: #FF1640;
+    }
   }
 }
