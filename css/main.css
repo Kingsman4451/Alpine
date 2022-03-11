@@ -647,8 +647,8 @@ body {
   border: 2px solid #FF1640;
   border-radius: 50px;
   margin-left: 20px;
-  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .hero-form__form-btn:hover {
