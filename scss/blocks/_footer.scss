@@ -1,0 +1,88 @@
+/* FOOTER */
+.footer{
+  position: relative;
+  background-image: url("../../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 68px;
+  padding-bottom: 111px;
+  &::before{
+    position: absolute;
+    left: calc(50% - 80px);
+    top: -80px;
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-image: url("../../img/footer-bg.jpg");
+    background-position: center;
+    content: "";
+    
+  }
+  &__footer-inner{
+    position: relative;
+    text-align: center;
+    &::before{
+      position: absolute;
+      left: calc(50% - 58.5px);
+      top: -127px;
+      display: block;
+      width: 117px;
+      height: 117px;
+      background-color: $red-color;
+      border-radius: 50%;
+      content: "";
+      }
+  }
+  &__footer-top{
+    @include flex(flex-start, space-between);
+    margin-bottom: 108px;
+  }
+  &__footer-left{
+    @include flex(flex-start, space-between)
+  }
+  &__footer-right{
+    text-align: end
+  }
+  &__socials{
+    @extend %list-no-style;
+    @include flex(center, flex-end);
+    margin-bottom: 15px;
+  }
+  &__socials-item{
+    margin-left: 31px;
+  }
+  &__footer-terms{
+    font-size: $font-size-medium;
+    line-height: 27px;
+    font-weight: 700;
+    color: $white-color;
+    margin: 0;
+    margin-bottom: 11px;
+  }
+  &__footer-text{
+    font-size: $font-size-medium;
+    line-height: 27px;
+    color: $white-color;
+    margin: 0;
+  }
+  &__footer-btn{
+    font-family: $font-paytone-one;
+    font-size: 28px;
+    line-height: 39px;
+    text-transform: uppercase;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 22px;
+    padding-left: 20px;
+    background-color: $white-color;
+    border: none;
+    &::after{
+      display: inline-block;
+      width: 24px;
+      height: 22px;
+      background-image: url("../../img/smile.png");
+      content: "";
+    }
+  }
+}
