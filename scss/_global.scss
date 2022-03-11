@@ -1,0 +1,18 @@
+.main-bg{
+  position: relative;
+  height: 1669px;
+  background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-top-bg{
+  position: absolute;
+  left: calc(50% - 497px);
+  top: -600px;
+  max-width: 994px;
+  background-image: linear-gradient(180deg, rgba(50, 42, 39, 0.4) 0%, rgba(45, 40, 40, 0.85) 33.85%, #2D2828 49.48%, #2D2828 68.75%, #2D2828 82.29%, #2D2828 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+
+}
