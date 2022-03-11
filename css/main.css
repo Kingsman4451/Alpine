@@ -443,12 +443,21 @@ body {
 
 .logo-link {
   display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .logo-link__logo-img {
   display: block;
   width: 143px;
   height: 59px;
+}
+
+.logo-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .navbar {
@@ -469,6 +478,22 @@ body {
 
 .navbar__nav-item {
   margin-right: 30px;
+}
+
+.navbar__nav-item::after {
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #ffffff;
+  content: "";
+  margin: auto;
+  margin-top: 3px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.navbar__nav-item:hover::after {
+  width: 100%;
 }
 
 .navbar__nav-link {
@@ -515,6 +540,12 @@ body {
   line-height: 27px;
   color: #ffffff;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.footer-nav__footer-item:hover .footer-nav__footer-link {
+  color: #FF1640;
 }
 
 /* HERO  */
@@ -617,6 +648,13 @@ body {
   border: 2px solid #FF1640;
   border-radius: 50px;
   margin-left: 20px;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-form__form-btn:hover {
+  color: #ffffff;
+  background-color: #FF1640;
 }
 
 /* ABOUT US */
@@ -708,6 +746,11 @@ body {
   padding-right: 20px;
   padding-left: 16px;
   margin-left: 7px;
+}
+
+.about__btn:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#864A23), to(#6A3A1B));
+  background-image: linear-gradient(0deg, #864A23 0%, #6A3A1B 100%);
 }
 
 .about .btn-text {
