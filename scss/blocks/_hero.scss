@@ -1,11 +1,13 @@
 /* HERO  */
 
 .hero{
+  .container{
+    padding: 0;
+  }
   background-image: url("../../img/cup.png");
   background-repeat: no-repeat;
   background-position: calc(100% + 15px) calc(100% - 100px);
   &__hero-content{
-    width: 994px;
     padding-top: 76px;
     padding-bottom: 79px;
     padding-left: 65px;
